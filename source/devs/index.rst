@@ -8,6 +8,6 @@ Developing Sponge
 
     guidelines
     workspace
-    gitfu
+    gitusage
     api/contributing
     forge/contributing

@@ -2,7 +2,7 @@
 How to Work with Git and Sponge
 ===============================
 
-*(aka Git-Fu: A Guide to Using Git in Development)*
+*(aka Git-fu: A Guide to Using Git in Development)*
 
 Using git is a vital part of developing for Sponge and SpongeAPI.
 
@@ -38,11 +38,13 @@ Setup your workspace as described in the main page of the Sponge project.
 * git submodule update --init --recursive
 * cp scripts/pre-commit .git/hooks
 
+.. image:: /assets/diagrams/SpongeSetup.png
+
 Your local copy of Sponge is now setup and your branch is master.
 
-* Working on the SpongeAPI is described here  :doc:`gitfu-api`.
+* Working on the SpongeAPI is described here  :doc:`gitusageApi`.
 
-* Working on the Sponge implementation is described here  :doc:`gitfu-impl`.
+* Working on the Sponge implementation is described here  :doc:`gitusageImpl`.
 
 
 

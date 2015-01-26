@@ -1,30 +1,43 @@
 ================================
-Git-Fu for Sponge Implementation
+Git Usage for Sponge Implementation
 ================================
+
+After cloning the Sponge project as per the instructions :doc:`gitusage` under enlisting the Sponge source,
+the developer can start to work.
+
+Note:  ``Mixin``, and ``SpongeAPI`` are two submodules of the Sponge project.  Before commits to Sponge, make sure
+to test, and ``commit`` and ``push`` the changes to either Mixin and/or SpongeAPI *before* making commits and pushing
+changes to Sponge.   When changes to SpongeAPI and/or Mixin are done, the ``git status`` within Sponge will show
+unstaged commits that refer to the submodule(s).  ``git add SpongeAPI`` and/or ``git add Mixin`` if those submodules
+appear in the status as unstaged commits.
+
+If the work that is about to occur involves changes to both implementation AND the API please STOP HERE and go look
+at :doc:`gitusageApi`. 
+
 
 1. ``cd Sponge``
 
 #. ``git pull``
 
 .. tip::
-    Bring your master branch current before branching.  ``git pull`` brings your branch (master at this point) up to date before branching it.
+    The developer should bring master branch current before branching.  ``git pull`` brings the branch (master at this point) up to date before branching it.
 
 #. ``git checkout -b YourBranchName``
 
 .. tip::
-    The name of your branch should follow a convention.  Please try to use a name like ``feature/your-feature``
+    The name of the branch should follow a convention.  Please use a name with a pattern ``feature/added-feature``.  Good examples:  ``feature/network-packet``, `feature/user-commands``.  Not good examples:  ``feature/fixes``, ``feature/trying-something``.  
 
-#.  Work with the files, create files, etc..  Do your work in the branch.
+#.  Work with the files, create files, etc..  Work in the branch. (Use ``git branch`` to list the branch that is current)
 
-#.  When you're done working with the files you can do a check that the
+#.  When done working with the files check that the
     module will compile.  This would be a good idea before even making
     the commit.
 
 .. tip::
     Run ``gradle compileJava`` to run a simple build of the source files.
 
-#.  When you're convinced that the build of your branch of the Sponge is
-    ok then you can commit. 
+#.  When convinced that the build of the branch of the Sponge is
+    ok then commit. 
 
 #.  ``git status``
 
