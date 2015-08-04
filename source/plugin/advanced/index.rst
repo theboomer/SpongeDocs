@@ -17,3 +17,4 @@ Contents
     manager
     debugging
     message-sinks
+    text-representations/index
