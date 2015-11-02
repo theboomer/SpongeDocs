@@ -9,7 +9,7 @@ before this might seem like a bit of a peculiar way of doing things. You might b
 This section gives a brief summary of ``Optional`` and explains how - and perhaps more importantly why -
 it's used throughout the Sponge API.
 
-Let's start with a little history, and look at how accessors - particularly ``getters`` - typically work when not making
+Let's start with a little history, and look at how accessors - particularly "getters" - typically work when not making
 use of ``Optional``.
 
 1. Implicit Nullable Contracts and Why They Suck
@@ -97,7 +97,7 @@ It should be pretty clear by now that there are some sizable headaches attached 
 all the more poingant when the API in question is a layer over an extremely unstable base product. Fortunately,
 there is a better way:
 
-#. Optional and the Explicit Nullable Contract
+2. Optional and the Explicit Nullable Contract
 ==============================================
 
 As mentioned above, APIs for Minecraft are in a difficult situation. Ultimately they need to provide a platform with
@@ -172,10 +172,10 @@ available:
 
  public void someEventHandler(Entity someEntity, Entity entity2) {
     Foo entityFoo = someEntity.getFoo();
-    if (entityFoo != null) {
+    if (entityFoo == null) {
         entityFoo = entity2.getFoo();
     }
-    if (entityFoo != null) {
+    if (entityFoo == null) {
         entityFoo = MyPlugin.DEFAULT_FOO;
     }
     entityFoo.bar();
