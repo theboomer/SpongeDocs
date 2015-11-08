@@ -49,7 +49,7 @@ Contents
     database
     permissions
     services
-    wgen-index
+    wgen/index
     manager
     debugging
     message-sinks
