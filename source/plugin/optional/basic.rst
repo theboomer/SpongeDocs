@@ -74,8 +74,8 @@ can lead to spaghetti code quite quickly, and moreover relies on the plugin auth
 contract to check whether a null check is necessary in the first place.
 
 That's not the only drawback however. Let's consider the API over the longer term and assume that at the time the author
- writes their plugin, they visit the method javadoc and see that the method is guaranteed to never return null
- (since every `Entity` always has a ``Foo`` available). Great! No convoluted null check required!
+writes their plugin, they visit the method javadoc and see that the method is guaranteed to never return null
+(since every `Entity` always has a ``Foo`` available). Great! No convoluted null check required!
 
 However, let's now assume that several versions of the game along the line, the game developers remove or deprecate
 the concept of ``Foo``. The API authors update the API accordingly and state that from now on the ``getFoo()`` method
@@ -195,3 +195,5 @@ This is merely the tip of the ``Optional`` iceberg. In java 8 ``Optional`` also 
 .. note::
 
  Further explanations are provided here: `Guava: Using And Avoiding Null Explained <https://github.com/google/guava/wiki/UsingAndAvoidingNullExplained/>`_
+
+If you want to know more about the usage of Optionals, then head over to: :doc:`usage`
