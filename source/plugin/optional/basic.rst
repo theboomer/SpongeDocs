@@ -1,6 +1,6 @@
-======================
-Working with Optionals
-======================
+===================
+Optionals Explained
+===================
 
 Much of the Sponge API makes use of Java's `Optional` system on object accessors, but if you've never used ``Optional``
 before this might seem like a bit of a peculiar way of doing things. You might be tempted to ask:
