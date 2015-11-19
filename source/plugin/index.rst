@@ -49,7 +49,7 @@ Contents
     data/index
     blocks/index
     entities/index
-    items
+    items/index
     injection
     scheduler
     database
