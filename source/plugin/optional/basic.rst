@@ -38,7 +38,7 @@ two ways:
 .. image:: /images/optionals2.png
 
 Let's assume that the ``getFoo()`` method can - as part of its contract - return null. This suddenly means that our
-code above is unsafe:
+code above is unsafe as it may result in a ``NullPointerException``:
 
 .. code-block:: java
 
